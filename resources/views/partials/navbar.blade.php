@@ -34,28 +34,28 @@
                 <!-- Authentication Links -->
                 @guest
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Empresa') }}</a>
+                        <a class="nav-link" href="{{ route('empresa') }}">{{ __('Empresa') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Productos') }}</a>
+                        <a class="nav-link" href="{{ route('productos') }}">{{ __('Productos') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Descargas') }}</a>
+                        <a class="nav-link" href="{{ route('descargas') }}">{{ __('Descargas') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Soluciones a Medida') }}</a>
+                        <a class="nav-link" href="{{ route('medidas') }}">{{ __('Soluciones a Medida') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Servicios') }}</a>
+                        <a class="nav-link" href="{{ route('servicios') }}">{{ __('Servicios') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Calidad') }}</a>
+                        <a class="nav-link" href="{{ route('calidad') }}">{{ __('Calidad') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Blog') }}</a>
+                        <a class="nav-link" href="{{ route('blog') }}">{{ __('Blog') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Contacto') }}</a>
+                        <a class="nav-link" href="{{ route('contacto') }}">{{ __('Contacto') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #009688" href="{{ route('login') }}"><i class="fas fa-search"></i></a>
