@@ -1,87 +1,69 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-2" data-slide-to="1"></li>
-            <li data-target="#carousel-example-2" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <div class="view">
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
-                    <div class="mask rgba-black-light"></div>
-                </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Light mask</h3>
-                    <p>First text</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
-                    <div class="mask rgba-black-strong"></div>
-                </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Strong mask</h3>
-                    <p>Secondary text</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view">
-                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
-                    <div class="mask rgba-black-slight"></div>
-                </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Slight mask</h3>
-                    <p>Third text</p>
-                </div>
-            </div>
+    @area
+    @slot('title','Soluciones a Medida')
+    @endarea
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-5">
+        
         </div>
-        <!--/.Slides-->
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
+        <div class="col-md-7">
+            <p>
+            Somos líderes en productos y servicios de alta tecnología, aportando soluciones a las demandas empresarias de modernización y actualización tecnológica.
+            Somos especialistas en la fabricación del equipamiento de calibración para nuestro laboratorio certificado.
+            Además desarrollamos los software para la lectura y programación de los medidores. Trabajamos teniendo en cuenta las necesidades de nuestros clientes y buscamos soluciones inteligentes adecuadas a cada empresa.
+            </p>
+        </div>
     </div>
-    <!--/.Carousel Wrapper-->
+</div>
+<div class="card z-depth-0" style="background-color: #F3F3F3">
+    <div class="card-body container my-5" style="padding: 0.5rem;   color: #00254C">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h5 class="text-center">¿Necesitás Asesoramiento?</h5>
+                <p class="text-center">
+                Contáctanos y te brindaremos toda la información que necesites
+                </p>
+                <form class="text-center" style="color: #757575;">
 
-    <!-- Projects section v.4 -->
-    <section class="container-fluid my-5">
+                    <!-- Name -->
+                    <div class="md-form mt-3">
+                        <input type="text" id="materialContactFormName" class="form-control">
+                        <label for="materialContactFormName">Name</label>
+                    </div>
 
+                    <!-- E-mail -->
+                    <div class="md-form">
+                        <input type="email" id="materialContactFormEmail" class="form-control">
+                        <label for="materialContactFormEmail">E-mail</label>
+                    </div>
+        
+                    <!-- Empresa -->
+                    <div class="md-form mt-3">
+                        <input type="text" id="materialContactFormEmpresa" class="form-control">
+                        <label for="materialContactFormEmpresa">Empresa</label>
+                    </div>
 
-        <div class="row"  style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed">
-            <div class="text-white text-center rgba-black-strong py-5 w-100">
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut dolor dolore dolorem ducimus eius error harum itaque labore magni necessitatibus porro quod reprehenderit tempora, ullam? Esse nostrum ratione voluptates!
-                          <br>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo iusto nam perferendis praesentium quod reprehenderit sequi veritatis. Dolore dolorum incidunt tempore? Ad maxime minima minus obcaecati omnis pariatur placeat quisquam.
-                      </div>
-                      <div class="col-md-6">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi at consectetur eos ex id in ipsum libero nihil, numquam perferendis placeat praesentium provident, quisquam rem repudiandae ullam vel veritatis!
-                      </div>
-                  </div>
-                </div>
+                    <!--Message-->
+                    <div class="md-form">
+                        <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                        <label for="materialContactFormMessage">Message</label>
+                    </div>
+
+                    <!-- Default unchecked -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                        <label class="custom-control-label" for="defaultUnchecked">Termino y Condicioines</label>
+                    </div>
+                    <!-- Send button -->
+                    <button class="btn btn-info  z-depth-0 my-4 waves-effect" type="submit">Enviar</button>
+
+                </form>
             </div>
-
         </div>
+    </div>
+</div>
 
-    </section>
-    <!-- Projects section v.4 -->
 @endsection

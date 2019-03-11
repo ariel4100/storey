@@ -31,3 +31,8 @@ Route::get('/contacto', 'SessionContactoController@index')->name('contacto');
 
 
 //---------FRONTEND------------//
+
+Route::prefix('adm')->group(function (){
+
+    Route::get('home');
+});

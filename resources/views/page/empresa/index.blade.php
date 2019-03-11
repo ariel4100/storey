@@ -3,7 +3,7 @@
 @section('content')
 
     <!--Carousel Wrapper-->
-    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carousel-example-2" class="carousel slide carousel-fade mb-4" data-ride="carousel">
         <!--Indicators-->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -60,28 +60,44 @@
     </div>
     <!--/.Carousel Wrapper-->
 
-    <!-- Projects section v.4 -->
-    <section class="container-fluid my-5">
+    @area
+    @slot('title','Nuestra Empresa ')
+    @endarea
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                STOREY S.A. es líder en productos y servicios de alta tecnología, aportando soluciones a las demandas empresarias de modernización y actualización tecnológica.
+                Gran experiencia en desarrollo de software y servicios a terceros. 	
+                Presencia en toda Sudamérica 	
+                Introdujimos en Argentina, el único sistema de transmisión por PLC pasando de MT a BT
+                Instalamos y mantenemos el único sistema de telegestión por PLC que opera comercialmente desde el año 1999 en Argentina
+                Fuimos pioneros en la introducción de medidores digitales para clientes residenciales en Argentina, Uruguay, Perú, Colombia y Paraguay
+                Implementamos la medición de energía reactiva y demanda máxima en medidores monofásicos residenciales
+                Somos la Empresa con mayor venta de medidores digitales de Argentina
+                Fabricamos el equipamiento de calibración para nuestro laboratorio certificado
+                Desarrollamos los software para la lectura y programación de los medidores
+            </p>
+        </div>
+        <div class="col-md-4">
+            <p>
+            2.500.000
+            llevamos + de dos millones quinientos mil medidores
+            </p>
+        </div>
+    </div>
 
-
-        <div class="row"  style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed">
-            <div class="text-white text-center rgba-black-strong py-5 w-100">
-                <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut dolor dolore dolorem ducimus eius error harum itaque labore magni necessitatibus porro quod reprehenderit tempora, ullam? Esse nostrum ratione voluptates!
-                          <br>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo iusto nam perferendis praesentium quod reprehenderit sequi veritatis. Dolore dolorum incidunt tempore? Ad maxime minima minus obcaecati omnis pariatur placeat quisquam.
-                      </div>
-                      <div class="col-md-6">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi at consectetur eos ex id in ipsum libero nihil, numquam perferendis placeat praesentium provident, quisquam rem repudiandae ullam vel veritatis!
-                      </div>
-                  </div>
-                </div>
-            </div>
+    <div class="row">
+        <div class="col-md-4">
 
         </div>
+        <div class="col-md-8">
+            <h5>Mision Y Vision</h5>
+            <p>
+            STOREY SA desde su constitución en 1995 aporta soluciones pragmáticas a los requerimientos de modernización y re-equipamiento tecnológico, ofreciendo una amplia gama de productos y servicios con tecnología de última generación. Esta se amplía año tras año con el objetivo de ofrecer mayor integración a las soluciones existentes, satisfaciendo las necesidades del cliente en forma cada vez más completa. Mercados cada día más competitivos plantean nuevos desafíos, imposibles de superar sin la utilización de tecnología de avanzada. 
+            </p>
+        </div>
+    </div>
+</div>
 
-    </section>
-    <!-- Projects section v.4 -->
 @endsection
