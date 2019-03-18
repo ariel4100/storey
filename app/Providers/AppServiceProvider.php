@@ -25,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::component('partials.seccion','area');
+        Blade::component('adm.partials.sidenav', 'sidenav');
     }
 }

@@ -1,0 +1,108 @@
+
+.login-logo {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+body.sidenav-open{
+
+    padding-left: 300px;
+
+}
+.navbar-fixed nav.navbar {
+    width: calc(100% - 300px);
+    left: 300px;
+    padding: 0 20px;
+}
+.collapsible li > a,
+.collapsible li > .collapsible-header {
+    padding: 0 30px;
+    line-height: 48px;
+    height: 48px;
+}
+.collapsible li > a > i,
+.collapsible li > .collapsible-header > i {
+    line-height: 64px !important;
+}
+.sidenav li > a > .fas {
+    font-size: 1.4rem;
+}
+.sidenav .user-view {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidenav .user-view > a {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0 !important;
+    }
+    .navbar-fixed nav.navbar {
+        width: 100%;
+        left: auto;
+        padding: 0 20px;
+    }
+}
+.sidenav li>a>i,
+.sidenav li>a>[class^="mdi-"],
+.sidenav li>a li>a>[class*="mdi-"],
+.sidenav li>a>i.material-icons {
+    color: #1B5E20;
+    margin: 0 5px 0 0;
+    transform: translateY(-8px);
+}
+.sidenav .collapsible-body li a,
+.sidenav.fixed .collapsible-body li a {
+    padding-left: 56px !important;
+}
+.side-nav li>a {
+    color: rgba(0,0,0,0.87);
+}
+.btn-action>i {
+    margin-right: 0;
+}
+
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active {
+    background-color: #1b5e20 !important;
+i {
+    color: #FFFFFF !important;
+}
+}
+
+table.noborder {
+tr {
+    border: none;
+}
+}
+
+.td-inline-form {
+    padding: 10px 0 0 0;
+.input-field {
+    padding: 0;
+    margin: 0;
+.validate {
+    padding: 0;
+    margin: 0;
+}
+.select-dropdown.dropdown-trigger {
+    padding: 0;
+    margin: 0;
+}
+}
+}
+

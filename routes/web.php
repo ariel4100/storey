@@ -30,9 +30,9 @@ Route::get('/blog', 'SessionBlogController@index')->name('blog');
 Route::get('/contacto', 'SessionContactoController@index')->name('contacto');
 
 
-//---------FRONTEND------------//
+//---------BACKEND------------//
 
 Route::prefix('adm')->group(function (){
 
-    Route::get('home');
+    Route::resource('home','HomeController');
 });
