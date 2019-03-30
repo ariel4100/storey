@@ -19,15 +19,15 @@ Auth::routes();
 
 
 //---------FRONTEND------------//
-Route::get('/', 'SessionHomeController@index')->name('home');
-Route::get('/empresa', 'SessionEmpresaController@index')->name('empresa');
+Route::get('/', 'FrontendController@home')->name('home');
+Route::get('/empresa', 'FrontendController@empresa')->name('empresa');
 Route::get('/productos', 'SessionProductoController@index')->name('productos');
-Route::get('/descargas', 'SessionDescargaController@index')->name('descargas');
-Route::get('/soluciones-a-medida', 'SessionMedidaController@index')->name('medidas');
-Route::get('/servicios', 'SessionServicioController@index')->name('servicios');
-Route::get('/calidad', 'SessionCalidadController@index')->name('calidad');
+Route::get('/descargas', 'FrontendController@descargas')->name('descargas');
+Route::get('/soluciones-a-medida', 'FrontendController@soluciones')->name('medidas');
+Route::get('/servicios', 'FrontendController@servicios')->name('servicios');
+Route::get('/calidad', 'FrontendController@calidad')->name('calidad');
 Route::get('/blog', 'SessionBlogController@index')->name('blog');
-Route::get('/contacto', 'SessionContactoController@index')->name('contacto');
+Route::get('/contacto', 'FrontendController@contacto')->name('contacto');
 
 
 //---------BACKEND------------//

@@ -1,38 +1,35 @@
 @extends('layouts.app')
-
+@push('style')
+    <style>
+        .collection .collection-item {
+            border-bottom: unset;
+            padding: unset;
+            padding-top: 10px;
+        }
+    </style>
+@endpush
 @section('content')
     @area
     @slot('title','Blog')
     @endarea
-<div class="container my-5">
+<div class="container">
     <div class="row">
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6>RIT Registrador de Parámetros Eléctricos </h6>
-                    <p>
-                        Optimice el consumo de Energía de su empresa. Reduzca el costo de sus facturas eléctricas y evite gastos adicionales
-                    </p>
-                    <a href="">Leer mas >></a>
-                </div>
-            </div>
+        <div class="col s12 m9">
+
         </div>
-        <div class="col-md-3">
-            <form action="">
-                <div class="input-group md-form form-sm">
-                    <input class="form-control lime-border" type="text" placeholder="Buscar..." aria-label="Search">
-                    <div class="input-group-append">
-                        <span class="input-group-text white" id="basic-text1">
-                            <i class="fas fa-search" style="color: #008780;" aria-hidden="true"></i>
-                        </span>
-                    </div>
+        <div class="col s12 m3">
+            <form class=" " style="display: flex; justify-content: center; align-items: center">
+                <div class="input-field " style="width: 100%">
+                    <input id="icon_prefix2" style="width: 100%" type="text" class="validate" placeholder="Buscar...">
                 </div>
+                <i class="material-icons prefix  ">search</i>
             </form>
-            <h5 style="color: #00254D;">CATEGORIAS</h5>
-            <hr style="color: #00254D;">
-            <ul class="list-unstyled">
-                <li>>> Actualidad</li>
-                <li>>> Empresa</li>
+            <h6 style="color: #00254D;">CATEGORIAS</h6>
+            <hr style="background-color: #00254D">
+            <ul class="collection" style="border: unset;">
+                <li class="collection-item">>> Alvin</li>
+                <li class="collection-item">>> Alvin</li>
+                <li class="collection-item">>> Alvin</li>
             </ul>
         </div>
     </div>

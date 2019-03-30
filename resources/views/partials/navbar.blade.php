@@ -1,8 +1,7 @@
-<div class="container-fluid">
-    <div class="row" style="background-color: #F3F3F3">
+<div class=" ">
+    <div class="row" style="background-color: #F3F3F3; margin-bottom: 0px; padding: 5px">
         <div class="container">
-            <div class="d-flex bd-highlight">
-                <div class="mr-auto p-2 bd-highlight"> </div>
+            <div class="right" style="display: flex">
                 <div class="p-2 bd-highlight">
                     <a href="">1232456789</a>
                 </div>
@@ -14,56 +13,27 @@
     </div>
 </div>
 
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="border-bottom: 3px solid #009688; ">
-    <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            STOREY
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-
-            <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
+<nav class=" " style="border-bottom: 3px solid #009688; ">
+    <div class="nav-wrapper" style="background-color: white">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="color: #000;">menu</i></a>
+        <div class="container" >
+            <a class="brand-logo" href="{{ url('/') }}" style="color: #000;">
+                STOREY
+            </a>
+            <ul class="right hide-on-med-and-down">
                 <!-- Authentication Links -->
                 @guest
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('empresa') }}">{{ __('Empresa') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('productos') }}">{{ __('Productos') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('descargas') }}">{{ __('Descargas') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('medidas') }}">{{ __('Soluciones a Medida') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('servicios') }}">{{ __('Servicios') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('calidad') }}">{{ __('Calidad') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('blog') }}">{{ __('Blog') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('contacto') }}">{{ __('Contacto') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #009688" href="{{ route('login') }}"><i class="fas fa-search"></i></a>
-                    </li>
+                    <li><a href="{{ route('empresa') }}">{{ __('Empresa') }}</a></li>
+                    <li><a href="{{ route('productos') }}">{{ __('Productos') }}</a></li>
+                    <li><a href="{{ route('descargas') }}">{{ __('Descargas') }}</a></li>
+                    <li><a href="{{ route('medidas') }}">{{ __('Soluciones a Medida') }}</a></li>
+                    <li><a href="{{ route('servicios') }}">{{ __('Servicios') }}</a></li>
+                    <li><a href="{{ route('calidad') }}">{{ __('Calidad') }}</a></li>
+                    <li><a href="{{ route('blog') }}">{{ __('Blog') }}</a></li>
+                    <li><a href="{{ route('contacto') }}">{{ __('Contacto') }}</a></li>
+                    <li><a style="color: #009688" href="{{ route('login') }}"><i class="material-icons">search</i></a></li>
                     @if (!Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
+                        <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
                     @endif
                 @else
                     <li class="nav-item dropdown">
@@ -88,3 +58,16 @@
         </div>
     </div>
 </nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="{{ route('empresa') }}">{{ __('Empresa') }}</a></li>
+    <li><a href="{{ route('productos') }}">{{ __('Productos') }}</a></li>
+    <li><a href="{{ route('descargas') }}">{{ __('Descargas') }}</a></li>
+    <li><a href="{{ route('medidas') }}">{{ __('Soluciones a Medida') }}</a></li>
+    <li><a href="{{ route('servicios') }}">{{ __('Servicios') }}</a></li>
+    <li><a href="{{ route('calidad') }}">{{ __('Calidad') }}</a></li>
+    <li><a href="{{ route('blog') }}">{{ __('Blog') }}</a></li>
+    <li><a href="{{ route('contacto') }}">{{ __('Contacto') }}</a></li>
+</ul>
+
+

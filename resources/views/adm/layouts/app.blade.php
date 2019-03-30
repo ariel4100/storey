@@ -18,6 +18,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
     @yield('style')
+    <style>
+        .sidenav li>a>i, .sidenav li>a>i.material-icons, .sidenav li>a li>a>[class*=mdi-] {
+            color: darkgrey;
+        }
+    </style>
 </head>
 <body class="sidenav-open" style="font-family: changa">
     <div id="app">
@@ -25,17 +30,10 @@
         @include('adm.partials.sidebar')---}}
         <header>
             <div class="navbar-fixed">
-                <nav class="navbar green darken-4" role="navigation">
+                <nav class="navbar" style="background-color: white;" role="navigation">
                     <div class="nav-wrapper">
-                        <a id="logo-container" href="#" class="brand-logo">@yield('title-section', 'Bienvenido')</a>
-                        <a
-                                class="right"
-                                href="#"
-                                onclick="
-                    event.preventDefault();
-                    document.getElementById('logout-form').submit();
-                  "
-                        >
+                        <a id="logo-container" href="#" class="brand-logo" style=" color: black !important;">@yield('title-section', 'Bienvenido')</a>
+                        <a class="right" href="#" style=" color: black !important;" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             Cerrar sesión
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;">
@@ -78,7 +76,6 @@
                     @yield('content')
 
                 </div>
-                <br><br>
             </div>
         </main>
 
@@ -94,11 +91,7 @@
         ],
         [
         'to' => 'asdsad',
-        'text'=> 'Historia'
-        ],
-        [
-        'to' => 'asdsad',
-        'text'=> 'Iconos'
+        'text'=> 'Contenido'
         ],
         ]
         ],

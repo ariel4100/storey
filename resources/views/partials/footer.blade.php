@@ -1,107 +1,66 @@
-<!-- Footer -->
-<footer class="page-footer font-small   pt-4" style="background-color: #303030">
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
+    <style>
+        .links ul li {
+            margin-bottom: 1rem !important;
+        }
+    </style>
 
-        <!-- Footer links -->
-        <div class="row text-center text-md-left mt-3 pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-                <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit.</p>
+<footer class="page-footer" style="background-color: #303030; color: #DDDDDD">
+    <div class="container">
+        <div class="row">
+            <div class="col m4 s12">
+                <h5 class="white-text">STOREY</h5>
+                <p class="grey-text text-lighten-4">SUSCRIBITE A NUESTRAS ÚLTIMAS NOVEDADES</p>
+                <form class=" "  style="display:flex; align-items: center">
+                    <div class="input-field ">
+                        <input id="noti" type="email" class="validate" placeholder="Ingresar Email">
+                    </div>
+                    <button class="btn" type="submit" style="margin-left: 10px">Enviar</button>
+                </form>
             </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">SECCIONES</h6>
-                <p>
-                    <a href="#!">MDBootstrap</a>
-                </p>
-                <p>
-                    <a href="#!">MDWordPress</a>
-                </p>
-                <p>
-                    <a href="#!">BrandFlow</a>
-                </p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 d-flex flex-column justify-content-end">
-                <p>
-                    <a href="#!">Become an Affiliate</a>
-                </p>
-                <p>
-                    <a href="#!">Shipping Rates</a>
-                </p>
-                <p>
-                    <a href="#!">Help</a>
-                </p>
-            </div>
-
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 d-flex flex-column justify-content-end">
-                <p>
-                    <a href="#!">Your Accountdddd</a>
-                </p>
-                <p>
-                    <a href="#!">Become an Affiliate</a>
-                </p>
-                <p>
-                    <a href="#!">Shipping Rates</a>
-                </p>
-            </div>
-
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">STOREY S.A.</h6>
-                <p>
-                    <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p>
-                    <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                <p>
-                    <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Footer links -->
-
-        <hr class="bg-light">
-
-        <!-- Grid row -->
-        <div class="row d-flex align-items-center">
-
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8">
-
-                <!--Copyright-->
-                <p class="text-center text-md-left">© 2018 Copyright:
-                    <a href="https://mdbootstrap.com/education/bootstrap/">
-                        <strong> MDBootstrap.com</strong>
-                    </a>
-                </p>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0">
-
-                <!-- Social buttons -->
-                <div class="text-center text-md-right">
-                    <p>
-                        <a href="">BY OSOLE</a>
-                    </p>
+            <div class="col m4 s12">
+                <h6 class="white-text">SECCIONES</h6>
+                <div class="links" style="display:flex;">
+                    <ul style="margin-right: 5rem">
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 1</a></li>
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 2</a></li>
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 3</a></li>
+                    </ul>
+                    <ul style="margin-right: 5rem">
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 1</a></li>
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 2</a></li>
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 3</a></li>
+                    </ul>
+                    <ul style="margin-right: 5rem">
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 1</a></li>
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 2</a></li>
+                        <li><a class="" style="color: #DDDDDD" href="#!">Link 3</a></li>
+                    </ul>
                 </div>
-
             </div>
-            <!-- Grid column -->
-
+            <div class="col m4 s12">
+                <h6 class="white-text">STOREY S.A.</h6>
+                <ul class=" " style="border: unset;">
+                    <li class="" style="display: flex; margin-bottom: 10px">
+                        <i class="material-icons" style="margin-right: 10px;">location_on</i>
+                        <span class="title">Uruguay 3552 (1643) San Isidro Buenos Aires, Argentina</span>
+                    </li>
+                    <li class="" style="display: flex; margin-bottom: 10px">
+                        <i class="material-icons" style="margin-right: 10px;">phone_in_talk</i>
+                        <span class="title">(5411) 4723-3500 <br>(5411) 5432-3500 <br>(5411) 4723-3555</span>
+                    </li>
+                    <li class="" style="display: flex; margin-bottom: 10px">
+                        <i class="material-icons" style="margin-right: 10px;">email</i>
+                        <span class="title">info@storey.com.ar</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Grid row -->
-
     </div>
-    <!-- Footer Links -->
-
+    <div class="footer-copyright">
+        <div class="container" style="border-top: 1px solid #FFFFFF; ">
+            © 2019 Copyright
+            <a class="text-lighten-4 right" href="#!" style="color: #DDDDDD">BY OSOLE</a>
+        </div>
+    </div>
 </footer>
-<!-- Footer -->

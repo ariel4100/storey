@@ -16,7 +16,7 @@
                                 <li class="{{ request()->fullUrl()==$link['to']?'active':'' }}">
                                     <a class="waves-effect" style="text-decoration: none;" href="{{ $link['to'] }}">
                                         {{ $link['text'] }}
-                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <i class="material-icons" style="color: black">keyboard_arrow_right</i>
                                     </a>
                                 </li>
                             @endforeach
