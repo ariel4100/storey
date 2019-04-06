@@ -86,11 +86,11 @@
         'icon' => '<i class="material-icons">home</i>',
         'links'=> [
         [
-        'to' => 'asdsad',
+        'to' => route('slider.list', ['seccion' => 'home']),
         'text'=> 'Slider'
         ],
         [
-        'to' => 'asdsad',
+        'to' => route('contenido.list', ['seccion' => 'home', 'tipo' => 'texto']),
         'text'=> 'Contenido'
         ],
         ]
@@ -100,12 +100,12 @@
         'icon' => '<i class="material-icons">business</i>',
         'links'=> [
         [
-        'to' => 'asdsad',
+        'to' => route('slider.list', ['seccion' => 'empresa']),
         'text'=> 'Slider'
         ],
         [
-        'to' => 'asdsad',
-        'text'=> 'Historia'
+        'to' => route('contenido.list', ['seccion' => 'empresa', 'tipo' => 'texto']),
+        'text'=> 'Contenido'
         ],
         [
         'to' => 'asdsad',
@@ -128,14 +128,54 @@
         ]
         ],
         [
-        'text' => 'Contenido',
+        'text' => 'Descagas',
         'icon' => '<i class="material-icons">archive</i>',
         'links'=> [
-        [
-        'to' => 'gd',
-        'text'=> 'Iconos'
+                [
+                'to' => route('contenido.list', ['seccion' => 'descargas', 'tipo' => 'descagable']),
+                'text'=> 'Contenido'
+                ],
+            ]
         ],
-        ]
+        [
+        'text' => 'Soluciones a Medida',
+        'icon' => '<i class="material-icons">archive</i>',
+        'links'=> [
+                [
+                'to' => route('contenido.list', ['seccion' => 'soluciones', 'tipo' => 'descagable']),
+                'text'=> 'Contenido'
+                ],
+            ]
+        ],
+        [
+        'text' => 'Servicios',
+        'icon' => '<i class="material-icons">archive</i>',
+        'links'=> [
+                [
+                'to' => route('contenido.list', ['seccion' => 'servicio', 'tipo' => 'texto']),
+                'text'=> 'Contenido'
+                ],
+            ]
+        ],
+        [
+        'text' => 'Calidad',
+        'icon' => '<i class="material-icons">archive</i>',
+        'links'=> [
+                [
+                'to' => route('contenido.list', ['seccion' => 'calidad', 'tipo' => 'texto']),
+                'text'=> 'Contenido'
+                ],
+            ]
+        ],
+        [
+        'text' => 'Blogs',
+        'icon' => '<i class="material-icons">archive</i>',
+        'links'=> [
+                [
+                'to' => route('contenido.list', ['seccion' => 'descargas', 'tipo' => 'texto']),
+                'text'=> 'Contenido'
+                ],
+            ]
         ],
         [
         'text' => 'Configuración',
@@ -180,9 +220,12 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.7.3/full/ckeditor.js"></script>
     <script>
         M.AutoInit();
     </script>
+
     @yield('script')
+
 </body>
 </html>
